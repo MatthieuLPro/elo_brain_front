@@ -1,16 +1,18 @@
 import React, {FunctionComponent, useEffect, useState} from 'react';
 import Paragraph from "../../atoms/paragraph";
+import {ICurrentText, defaultCurrentText} from "./interface"
 
 const ParagraphWithFetching: FunctionComponent = () => {
-    const [currentText, setCurrentText] = useState('');
+    const [currentText, setCurrentText] = useState<ICurrentText>(defaultCurrentText);
+    const textContent = currentText.textContent
 
     useEffect(() => {
         // The setTimeout function simulates the data fetching timer
-        setTimeout(() => { setCurrentText('Edit src/App.tsx and save to reload.') }, 2000)
+        setTimeout(() => { setCurrentText({textContent: 'Edit src/App.tsx and save to reload.'}) }, 2000)
     })
 
     return (
-        <Paragraph text={currentText} loading={currentText === ''} />
+        <Paragraph text={textContent} loading={textContent === ''} />
     )
 }
 

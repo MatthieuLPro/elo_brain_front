@@ -1,11 +1,8 @@
 import React, { FunctionComponent } from 'react';
 import WithLoading from '../../hoc/withLoading';
+import {IParagraphProps} from './interface';
 
-interface ParagraphProps {
-    text: string
-}
-
-const Paragraph: FunctionComponent<ParagraphProps> = ({text}) => {
+const Paragraph: FunctionComponent<IParagraphProps> = ({text}) => {
     return (
         <p>{text}</p>
     )
