@@ -2,8 +2,10 @@ import React from 'react';
 import Navbar from './components/Navbar'
 
 import './App.css';
+import ParagraphWithFetching from "./lib/molecules/paragraph_with_fetching";
 
 function App() {
+  const EditParagraph = <ParagraphWithFetching />;
   return (
     <div className="App">
      <Navbar />
