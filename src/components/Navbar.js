@@ -1,6 +1,17 @@
 import React from 'react';
+import './Navbar.style.css';
+import logo from '../images/vsfe5.png';
 
 const Navbar = () => {
-  return <nav>This will be the Navbar</nav>;
+  return (
+    <nav className="navbar">
+      <img src={logo} className="logo" alt="logo" />
+      <ul>
+        <li>home</li>
+        <li>about</li>
+      </ul>
+    </nav>
+  );
 };
+
 export default Navbar;
