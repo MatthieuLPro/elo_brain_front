@@ -3,6 +3,7 @@ import UserInfo from './UserInfo'
 
  class Users extends Component {
      state = {
+        //  Donnée a récupérer avec Axios
          users: [
              {
                  id: "1",
@@ -18,6 +19,11 @@ import UserInfo from './UserInfo'
                 id: "3",
                 username: "Knee",
                 team_name: "Rox"
+            },
+            {
+                id: "4",
+                username: "Glutonny",
+                team_name: "OrKs Grand Poitiers"
             },
          ]
      }

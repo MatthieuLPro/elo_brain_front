@@ -9,7 +9,9 @@ class App extends Component {
         return (
             <div className="App">
                 <Navbar title={"Testing Mode"} />
-                <Users />
+                <div className="container">
+                    <Users />
+                </div>
             </div>);
     }
 }
