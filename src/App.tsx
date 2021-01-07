@@ -1,7 +1,8 @@
-import React from 'react';
-import Navbar from './components/Navbar'
-
+import React, { Component } from 'react';
+import Navbar from './components/Navbar';
+import Users from './components/users/Users'
 import './App.css';
+<<<<<<< HEAD
 import FetchingPlayersTable from "./lib/fetching/fetchingPlayersTable";
 
 function App() {
@@ -23,7 +24,20 @@ function App() {
       </header>
     </div>
   );
+=======
+
+
+class App extends Component {
+    render() {
+        return (
+            <div className="App">
+                <Navbar title={"Testing Mode"} />
+                <div className="container">
+                    <Users />
+                </div>
+            </div>);
+    }
+>>>>>>> front
 }
 
 export default App;
-// voir les cours sur udemy pour l'architecture de la page users
