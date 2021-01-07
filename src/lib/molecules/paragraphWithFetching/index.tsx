@@ -1,6 +1,6 @@
 import React, {FunctionComponent, useEffect, useState} from 'react';
 import Paragraph from "../../atoms/paragraph";
-import {ICurrentText, defaultCurrentText} from "./interface"
+import {ICurrentText, defaultCurrentText} from "./interface";
 
 const ParagraphWithFetching: FunctionComponent = () => {
     const [currentText, setCurrentText] = useState<ICurrentText>(defaultCurrentText);
