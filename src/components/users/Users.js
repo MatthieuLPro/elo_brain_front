@@ -41,7 +41,7 @@ import UserInfo from './UserInfo'
 
 const userStyle = {
     display: 'grid',
-    gridTemplateColumns: 'repeat(3, 1fr)',
+    gridTemplateColumns: 'repeat(1, 1fr)',
     gridGap: '1rem'
 }
 
