@@ -10,24 +10,24 @@ import UserInfo from './UserInfo'
                  username: "Rudeboy",
                  team_name: "Akatsuki"
              },
-             {
-                id: "2",
-                username: "Daigo",
-                team_name: "Konoha"
-            },
-            {
-                id: "3",
-                username: "Knee",
-                team_name: "Rox"
-            },
-            {
-                id: "4",
-                username: "Glutonny",
-                team_name: "OrKs Grand Poitiers"
-            },
+            //  {
+            //     id: "2",
+            //     username: "Daigo",
+            //     team_name: "Konoha"
+            // },
+            // {
+            //     id: "3",
+            //     username: "Knee",
+            //     team_name: "Rox"
+            // },
+            // {
+            //     id: "4",
+            //     username: "Glutonny",
+            //     team_name: "OrKs Grand Poitiers"
+            // },
          ]
      }
-
+     
     render() {
         return (
             <div style={userStyle}>
