@@ -6,7 +6,8 @@ const UserInfo = () =>  {
     
     return (
             <div className="card text-center">
-               <h2>hello</h2>
+               <h2>Player name</h2>
+               <p>Some more data...</p>
             </div>
         )
 }

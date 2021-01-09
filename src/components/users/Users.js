@@ -1,19 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import FetchingPlayersTable from "../../lib/fetching/fetchingPlayersTable";
 
- class Users extends Component {
- 
-     
-    render() {
-        return (
-            <div style={userStyle}>
-                {/* {this.props.users.map(user => (
-                    <UserInfo key={user.id} user={user} />
-                ))} */}
-                <FetchingPlayersTable />
-            </div>
-        )
-    }
+ const Users = () => {
+     return (
+        <div style={userStyle}>
+            <FetchingPlayersTable />
+        </div>
+    );  
 }
 
 const userStyle = {
@@ -22,4 +15,4 @@ const userStyle = {
     gridGap: '1rem'
 }
 
-export default Users
+export default Users;
